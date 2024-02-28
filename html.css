@@ -1,0 +1,83 @@
+body {
+    margin: 5;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(45deg, #3498db, #581bac, #e74c3c, #f39c12);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1{
+    color: #000000;
+    text-align: center;
+
+}
+
+p{
+    color: gray;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    height: 50%;
+}
+  
+div.gallery:hover {
+    border: 1px solid #777;
+}
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+  
+div.desc {
+    padding: 5px;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+a:link {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(73, 73, 73);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: rgb(140, 0, 255);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
